@@ -45,7 +45,7 @@ class RestoTest extends TestCase
             ->assertJsonStructure(['name', 'description', 'address']);
     }
 
-    public function test_user_can_update_resto()
+    public function test_user_can_edit_resto()
     {
         $updatedData = Resto::factory()->makeOne()->toArray();
         $data = Resto::factory()->createOne();
