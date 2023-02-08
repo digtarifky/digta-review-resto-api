@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Review extends Model
 {
@@ -15,4 +16,13 @@ class Review extends Model
         'user_id',
         'resto_id',
     ];
+
+    /**
+     * Get the user that owns the Review
+     *
+     * @return \Illuminate\Database\El    */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
