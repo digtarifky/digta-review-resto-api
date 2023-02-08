@@ -41,6 +41,7 @@ class AuthenticationController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|unique:users,email',
             'password' => 'required|confirmed',
+            
         ]);
 
         return User::create([
