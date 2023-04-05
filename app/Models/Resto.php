@@ -16,6 +16,7 @@ class Resto extends Model
         'name',
         'description',
         'address',
+        'image',
     ];
 
     /**

@@ -29,7 +29,7 @@ class AuthenticationTest extends TestCase
 
    public function test_user_can_register()
    {
-        $data = [
+        $data = [ 
             'name' => 'Tester',
             'email' => 'tester@email.com',
             'password' => 'password',
